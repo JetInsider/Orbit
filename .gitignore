@@ -1,44 +1,43 @@
-# Node.js dependencies
+# =========================
+# General
+# =========================
 node_modules/
+dist/
+build/
+coverage/
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Build outputs
-dist/
-build/
-.out/
-.next/
-coverage/
-
+# =========================
 # Environment files
+# =========================
+backend/.env
+backend/.env.local
+frontend/.env
+frontend/.env.local
 .env
 .env.local
-.env.*.local
 
-# Logs
-logs
-*.log
-*.log.*
-pids
-*.pid
-*.seed
+# =========================
+# Credentials folder (ignore everything inside)
+# =========================
+credentials/
 
-# OS-generated files
-.DS_Store
-Thumbs.db
-
-# Editor folders and files
+# =========================
+# Editor / OS files
+# =========================
 .vscode/
 .idea/
 *.swp
-
-# Temporary files
-*.tmp
-*.temp
+*.swo
 *.bak
+*.tmp
 *.old
-
-# Package locks (optional, depending on team choice)
-# package-lock.json
-# yarn.lock
